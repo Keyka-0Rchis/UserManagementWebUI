@@ -1,0 +1,32 @@
+# クラスファイル
+*.class
+
+# コンパイル出力フォルダ（Eclipseなら bin/）
+bin/
+
+# ログファイルやデータフォルダ
+logs/
+data/
+
+# OSやIDEによる一時ファイル
+.DS_Store
+Thumbs.db
+
+# === Eclipse関係 ===
+
+# Eclipseのメタデータ（プロジェクト設定）
+.project
+.classpath
+
+# ワークスペースの設定など（Gitには不要）
+.settings/
+
+# === その他 ===
+
+# もし何かのビルドツール（Maven, Gradle）を使ってたら
+target/
+build/
+
+# ユーザー固有の設定ファイル
+*.iml
+.idea/
