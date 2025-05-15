@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ユーザー管理">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/ui/elements.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/actions/addUser.js"></script>
+    <script type="module" src="js/actions/viewUsers.js"></script>
+    <script type="module" src="js/actions/deleteUser.js"></script>
+    <title>ユーザー管理</title>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1>ユーザー管理するよ！</h1>
+        </div>
+    </header>
+    <main>
+		<p id="message"></p>
+        <section class="mode-select">
+            <div class="inner">
+                <form class="mode-select-form">
+                    <fieldset class="mode-select-form-field">
+                        <legend>モードを選択してください</legend>
+                        <input type="radio" name="mode" id="mode-add" value="add">
+                        <label for="mode-add">ユーザー登録</label>
+                        <input type="radio" name="mode" id="mode-view" value="view">
+                        <label for="mode-view">ユーザー確認</label>
+                        <input type="radio" name="mode" id="mode-delete" value="delete">
+                        <label for="mode-delete">ユーザー削除</label>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="add-user">
+            <div class="inner">
+                <form class="add-user-form">
+                    <fieldset class="add-user-form-field">
+                        <legend>ユーザー追加</legend>
+                        <label for="user-name">名前</label>
+                        <input type="text" name="userName" id="user-name">
+                        <label for="user-email">メールアドレス</label>
+                        <input type="email" name="userEmail" id="user-email">
+                        <button id="add-submit" type="submit">実行</button>
+                        <button type="reset">リセット</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="view-user">
+            <div class="inner">
+                <form class="view-user-form">
+                    <fieldset class="view-user-form-field">
+                        <legend>ユーザー確認</legend>
+                        <button  id="view-submit" type="submit">実行</button>
+                        <p class="view-area"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="delete-user">
+            <div class="inner">
+                <form class="delete-user-form">
+                    <fieldset class="delete-user-form-field">
+                        <legend>ユーザー削除</legend>
+                        <label for="delete-id">削除するID</label>
+                        <input type="text" name="deleteId" id="delete-id">
+                        <button id="delete-submit" type="submit">実行</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

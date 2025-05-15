@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.inner{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+.user-list{
+	margin: 0 auto;
+	text-align: center;
+	border: 2px solid black;
+	width: 90%;
+}
+.user-list th{
+	font-weight: bold;
+}
+.user-list th,td{
+	border: 1px solid black;
+	width: 30%;
+}
+
+.message-NO-USER{
+	font-size: 120%;
+	font-weight: 200;
+}
