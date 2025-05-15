@@ -49,6 +49,7 @@
 						<p class="message-NO-USER">有効なユーザーデータがありません。</p>
 					</c:otherwise>
 				</c:choose>
+				<a class="back-link" href="<%= request.getContextPath() %>/index.html">元のページに戻る</a>
 			</div>
 		</main>
 	</body>
